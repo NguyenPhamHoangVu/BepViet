@@ -11,6 +11,7 @@ import CreatePost from './pages/CreatePost'
 import { useUser } from '@clerk/clerk-react'
 import Layout from './pages/Layout'
 import {Toaster} from 'react-hot-toast';
+import RecipeCollection from './pages/RecipeCollection'
 
 const App = () => {
   const {user} = useUser();
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='messages/:userId' element={<ChatBox />}/>
           <Route path='connections' element={<Connection />}/>
           <Route path='discover' element={<Discover />}/>
+          <Route path='collections' element={<RecipeCollection />}/>
           <Route path='profile' element={<Profile />}/>
           <Route path='profile/:profileId' element={<Profile />}/>
           <Route path='create-post' element={<CreatePost />}/>

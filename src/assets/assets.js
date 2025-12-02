@@ -3,7 +3,7 @@ import sample_cover from './sample_cover.jpg'
 import sample_profile from './sample_profile.jpg'
 import bgImage from './bgImage.png'
 import group_users from './group_users.png'
-import { Home, MessageCircle, Search, UserIcon, Users } from 'lucide-react'
+import { BookMarked, Home, MessageCircle, Search, UserIcon, Users } from 'lucide-react'
 import sponsored_img from './sponsored_img.png'
 
 export const assets = {
@@ -20,6 +20,7 @@ export const menuItemsData = [
     { to: '/messages', label: 'Tin nhắn', Icon: MessageCircle },
     { to: '/connections', label: 'Kết nối', Icon: Users },
     { to: '/discover', label: 'Khám Phá', Icon: Search },
+    { to: '/collections', label: 'Bộ sưu tập', Icon: BookMarked },
     { to: '/profile', label: 'Trang cá nhấn', Icon: UserIcon },
 ];
 
@@ -295,4 +296,109 @@ export const dummyFollowingData = [
 
 export const dummyPendingConnectionsData = [
     dummyUserData
+]
+
+export const dummyRecipeCollection = [
+    {
+        "_id": "recipe-01",
+        "name": "Phở Bò Truyền Thống",
+        "description": "Nước dùng thanh ngọt được hầm từ xương ống bò trong nhiều giờ, kết hợp với bánh phở mềm và thịt bò tái chuẩn vị Hà Nội.",
+        "category": "Món chính",
+        "difficulty": "Trung bình",
+        "image": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg",
+        "tags": ["phở", "bữa sáng", "món nước"],
+        "ingredients": [
+            "1kg xương ống bò",
+            "500g bánh phở tươi",
+            "300g thịt bò thăn",
+            "Gừng, hành tím, quế, hồi, thảo quả",
+            "Rau thơm, hành lá, chanh, ớt"
+        ],
+        "steps": [
+            "Nướng sơ gừng và hành tím, đập dập để tạo mùi thơm.",
+            "Hầm xương cùng quế, hồi, thảo quả trong 3 giờ để lấy nước dùng.",
+            "Chần bánh phở, thịt bò và cho vào tô.",
+            "Chan nước dùng nóng, thêm hành lá, rau thơm và các topping yêu thích."
+        ],
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 180,
+        "createdAt": "2025-07-01T08:00:00.000Z"
+    },
+    {
+        "_id": "recipe-02",
+        "name": "Gỏi Cuốn Tôm Thịt",
+        "description": "Món ăn nhẹ thanh mát với bánh tráng dẻo, rau sống, bún tươi và phần nhân tôm thịt hài hòa.",
+        "category": "Món khai vị",
+        "difficulty": "Dễ",
+        "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+        "tags": ["healthy", "ăn nhẹ", "không chiên"],
+        "ingredients": [
+            "12 bánh tráng",
+            "200g tôm sú",
+            "200g thịt ba chỉ",
+            "Rau sống, xà lách, húng quế",
+            "Bún tươi"
+        ],
+        "steps": [
+            "Luộc chín tôm và thịt, cắt lát vừa ăn.",
+            "Trải bánh tráng, xếp rau, bún, tôm thịt lên trên.",
+            "Cuộn chặt tay và thưởng thức cùng nước chấm mắm nêm hoặc tương đậu phộng."
+        ],
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 15,
+        "createdAt": "2025-07-05T10:00:00.000Z"
+    },
+    {
+        "_id": "recipe-03",
+        "name": "Bánh Mì Thịt Nướng",
+        "description": "Ổ bánh mì giòn rụm kẹp thịt heo nướng thơm lừng, đồ chua giòn và lớp pate béo ngậy.",
+        "category": "Ăn sáng",
+        "difficulty": "Trung bình",
+        "image": "https://images.pexels.com/photos/3590400/pexels-photo-3590400.jpeg",
+        "tags": ["streetfood", "grill", "quick"],
+        "ingredients": [
+            "4 ổ bánh mì",
+            "400g thịt cổ vai",
+            "Pate, bơ, sốt mayonnaise",
+            "Dưa leo, đồ chua, rau mùi",
+            "Gia vị ướp: sả, tỏi, ngũ vị hương"
+        ],
+        "steps": [
+            "Ướp thịt với sả, tỏi, ngũ vị hương ít nhất 1 giờ.",
+            "Nướng thịt trên than hoặc chảo cho đến khi vàng thơm.",
+            "Xẻ bánh mì, phết pate, bơ rồi lần lượt cho thịt, rau và đồ chua vào."
+        ],
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "createdAt": "2025-07-12T07:30:00.000Z"
+    },
+    {
+        "_id": "recipe-04",
+        "name": "Chè Khúc Bạch",
+        "description": "Món tráng miệng mát lạnh với khúc bạch mềm béo, trái cây tươi và nước đường vải thơm dịu.",
+        "category": "Tráng miệng",
+        "difficulty": "Dễ",
+        "image": "https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg",
+        "tags": ["dessert", "mùa hè", "lạnh"],
+        "ingredients": [
+            "200ml kem tươi",
+            "200ml sữa tươi không đường",
+            "10g gelatin",
+            "Hạnh nhân lát rang",
+            "Trái cây: nhãn, vải, dâu"
+        ],
+        "steps": [
+            "Ngâm nở gelatin, sau đó đun cùng sữa và kem tươi cho tan.",
+            "Đổ hỗn hợp vào khuôn, để lạnh 4 giờ rồi cắt khối vừa ăn.",
+            "Nấu nước đường với nhãn/vải, để nguội.",
+            "Cho khúc bạch, trái cây vào chén và chan nước đường, rắc hạnh nhân."
+        ],
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "createdAt": "2025-07-18T14:15:00.000Z"
+    }
 ]

@@ -8,3 +8,20 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.form-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  background-color: #fff;
+  color: #0f172a;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
