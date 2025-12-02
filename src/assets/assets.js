@@ -296,3 +296,42 @@ export const dummyFollowingData = [
 export const dummyPendingConnectionsData = [
     dummyUserData
 ]
+
+export const dummyRecipeCollection = [
+    {
+        "_id": "recipe_01",
+        "name": "Phở Bò Hà Nội",
+        "description": "Nước dùng trong, ngọt tự nhiên từ xương bò, thêm quế hồi và gừng nướng tạo mùi thơm đặc trưng.",
+        "image_url": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg",
+        "difficulty": "Trung bình",
+        "cooking_time": 45,
+        "tags": ["Bò", "Nước dùng", "Món nước"]
+    },
+    {
+        "_id": "recipe_02",
+        "name": "Bún Chả Hà Nội",
+        "description": "Thịt nướng than hoa ăn kèm bún tươi, rau sống và chén nước mắm pha chua ngọt dịu nhẹ.",
+        "image_url": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+        "difficulty": "Dễ",
+        "cooking_time": 35,
+        "tags": ["Heo", "Nướng", "Ăn trưa"]
+    },
+    {
+        "_id": "recipe_03",
+        "name": "Gỏi Cuốn Tôm Thịt",
+        "description": "Cuốn bánh tráng với tôm, thịt heo, bún và rau thơm; chấm cùng nước mắm hoặc tương đặc.",
+        "image_url": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        "difficulty": "Dễ",
+        "cooking_time": 25,
+        "tags": ["Cuốn", "Khai vị", "Thanh mát"]
+    },
+    {
+        "_id": "recipe_04",
+        "name": "Cà Ri Gà Sữa Dừa",
+        "description": "Cà ri cay nhẹ kết hợp vị béo của nước cốt dừa, ăn cùng bánh mì hoặc cơm trắng.",
+        "image_url": "https://images.pexels.com/photos/1437268/pexels-photo-1437268.jpeg",
+        "difficulty": "Trung bình",
+        "cooking_time": 60,
+        "tags": ["Gà", "Cà ri", "Cuối tuần"]
+    }
+]

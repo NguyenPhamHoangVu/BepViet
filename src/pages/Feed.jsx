@@ -3,6 +3,7 @@ import { assets, dummyPostsData } from '../assets/assets'
 import Loading from '../components/Loading';
 import StoriesBar from '../components/StoriesBar';
 import PostCard from '../components/PostCard';
+import RecipeCollection from '../components/RecipeCollection';
 import RecentMessages from '../components/RecentMessages';
 
 const Feed = () => {
@@ -26,6 +27,7 @@ const Feed = () => {
       <div>
        <StoriesBar />
         <div className='p-4 space-y-6' >
+          <RecipeCollection />
           {feeds.map((post)=>(
             <PostCard key={post._id} post={post}/>
           ))}
