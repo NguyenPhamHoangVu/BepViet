@@ -12,7 +12,9 @@ const Sidebar = ({sidebarOpen, setSidebarOpen}) => {
     const {signOut} = useClerk();
 
   return (
-    <div className={`w-60 xl:w-72 bg-white border-r border-gray-200 flex flex-col justify-between items-center max-sm:absolute top-0 bottom-0 z-20 
+    <div className={`w-60 xl:w-72 bg-white border-r border-gray-200 flex flex-col justify-between items-center
+    sm:sticky sm:top-0 sm:h-screen
+    max-sm:fixed max-sm:z-20 max-sm:top-0 max-sm:bottom-0 
     ${sidebarOpen ? 'translate-x-0' : 'max-sm:-translate-x-full'} transition-all duration-300 ease-in-out`}>
         <div className='w-full'>
             <img onClick={()=> navigate('/')} src={assets.logo} alt=""  className='w-26 ml-7 my-2 cursor-pointer'/>
