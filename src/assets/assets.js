@@ -16,22 +16,22 @@ export const assets = {
 }
 
 export const menuItemsData = [
-    { to: '/', label: 'Feed', Icon: Home },
-    { to: '/messages', label: 'Messages', Icon: MessageCircle },
-    { to: '/connections', label: 'Connections', Icon: Users },
-    { to: '/discover', label: 'Discover', Icon: Search },
-    { to: '/profile', label: 'Profile', Icon: UserIcon },
+    { to: '/', label: 'Bảng tin', Icon: Home },
+    { to: '/messages', label: 'Tin nhắn', Icon: MessageCircle },
+    { to: '/connections', label: 'Kết nối', Icon: Users },
+    { to: '/discover', label: 'Khám Phá', Icon: Search },
+    { to: '/profile', label: 'Trang cá nhấn', Icon: UserIcon },
 ];
 
 export const dummyUserData = {
     "_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
     "email": "admin@example.com",
-    "full_name": "John Warren",
-    "username": "john_warren",
-    "bio": "🌍 Dreamer | 📚 Learner | 🚀 Doer\r\nExploring life one step at a time.\r\n✨ Staying curious. Creating with purpose.",
+    "full_name": "Hoàng Vũ",
+    "username": "hoangvu",
+    "bio": "xin chào mình là Hoàng Vũ đây",
     "profile_picture": sample_profile,
     "cover_photo": sample_cover,
-    "location": "New York, NY",
+    "location": "Hóc Môn, TPHCM",
     "followers": ["user_2", "user_3"],
     "following": ["user_2", "user_3"],
     "connections": ["user_2", "user_3"],
@@ -44,16 +44,16 @@ export const dummyUserData = {
 const dummyUser2Data = {
     ...dummyUserData,
     _id: "user_2",
-    username: "Richard Hendricks",
-    full_name: "Richard Hendricks",
+    username: "philong",
+    full_name: "Phi Long",
     profile_picture: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
 }
 
 const dummyUser3Data = {
     ...dummyUserData,
     _id: "user_3",
-    username: "alexa_james",
-    full_name: "Alexa james",
+    username: "longvu",
+    full_name: "Long Vũ",
     profile_picture: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
 }
 
@@ -65,7 +65,7 @@ export const dummyStoriesData = [
         "media_url": "",
         "media_type": "text",
         "background_color": "#4f46e5",
-        "createdAt": "2025-07-25T08:16:06.958Z",
+        "createdAt": "2025-07-24T08:02:06.958Z",
         "updatedAt": "2025-07-25T08:16:06.958Z",
     },
     {
@@ -125,9 +125,9 @@ export const dummyPostsData = [
     {
         "_id": "68773e977db16954a783839c",
         "user": dummyUserData,
-        "content": "We're a small #team with a big vision — working day and night to turn dreams into products, and #products into something people love.",
+        "content": " Bữa sáng hay còn gọi là bữa điểm tâm, là một trong bữa ăn quan trọng đối với sức khỏe con người. Các chuyên gia dinh dưỡng khuyến cáo tuyệt đối bạn không nên bỏ qua bữa sáng. Với tầm quan trọng của nó, bữa sáng được người hâm mộ quan tâm và lựa chọn. Để bữa sáng thêm đa dạng, bạn có thể điểm qua các hình ảnh món ăn ngon để có menu thực đơn đa dạng.",
         "image_urls": [
-            "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg"
+            "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-1.jpg"
         ],
         "post_type": "text_with_image",
         "likes_count": [],
@@ -137,8 +137,10 @@ export const dummyPostsData = [
     {
         "_id": "686e6d0407845749500c24cd",
         "user": dummyUserData,
-        "content": "Unlock your potential—every small step counts. Stay consistent, stay focused, and trust the process. Growth takes time, but every day is a new chance to be better than yesterday. 🌱✨\r\n\r\n#Motivation #GrowthMindset #DailyInspiration #StayFocused #LevelUp #PositiveVibes #KeepGoing #SelfImprovement #MindsetMatters #SuccessJourney",
-        "image_urls": [],
+        "content": "Phở bò được CNN chọn là 28 trên tổng số 50 món ăn ngon nhất thế giới (2011). Khi thưởng thức bạn sẽ cảm nhận được những miếng nạm giòn, miếng gầu béo, bánh phở dai mịn, hành lá chẻ và nhiều hành hoa. Nếu bạn là người nghiện phở thì chúng tôi tin chắc rằng 2 bát tô đầy mới đủ làm bạn thỏa mãn. 🌱✨\r\n\r\n#Motivation #GrowthMindset #DailyInspiration #StayFocused #LevelUp #PositiveVibes #KeepGoing #SelfImprovement #MindsetMatters #SuccessJourney",
+        "image_urls": [
+            "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-5.jpg"
+        ],
         "post_type": "text",
         "likes_count": [],
         "createdAt": "2025-07-09T13:22:12.601Z",
@@ -147,7 +149,7 @@ export const dummyPostsData = [
     {
         "_id": "686e6b21de877d29cf02e2a7",
         "user": dummyUserData,
-        "content": "This is a sample paragraph with some #hashtags like #socialmedia and #marketing. Let's find them!",
+        "content": "Năm 2012, bún riêu cua đã được CNN bình chọn là một trong những món ăn hấp dẫn nhất châu Á. Đó là vinh hạnh cũng là minh chứng rằng, điều tuyệt vời nhất đôi khi chỉ đến từ những thứ đơn giản nhất.",
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
@@ -159,7 +161,7 @@ export const dummyPostsData = [
         "user": dummyUserData,
         "content": "",
         "image_urls": [
-            "https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg"
+            "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-8.jpg"
         ],
         "post_type": "image",
         "likes_count": [
@@ -171,9 +173,9 @@ export const dummyPostsData = [
     {
         "_id": "686e39e86e0585e9e2e58dd3",
         "user": dummyUserData,
-        "content": "Finally , got the car !",
+        "content": "Cơm tấm là món đặc sản của miền Nam Việt Nam, nó là một trong những món ăn sáng được ưa chuộng nhất của người miền Nam. Điểm đặc biệt là ăn cơm tấm phải có nước mắm ngọt, là nước mắm pha với nước lọc và thêm đường.Tùy theo cách chế biến và khẩu vị của người ăn, nước mắm có thể ngọt nhiều hoặc ngọt mặn.",
         "image_urls": [
-            "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg"
+            "https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-12.jpg"
         ],
         "post_type": "text_with_image",
         "likes_count": [],
@@ -183,7 +185,7 @@ export const dummyPostsData = [
     {
         "_id": "686e361389841ba9f2633201",
         "user": dummyUserData,
-        "content": "Hello, Everyone this is my first Post",
+        "content": "xin chào đây là bài post đầu tiên",
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],

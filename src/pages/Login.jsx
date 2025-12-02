@@ -4,6 +4,8 @@ import { Star } from "lucide-react";
 import { SignIn } from '@clerk/clerk-react';
 
 const Login = () => {
+
+  
   return (
     <div className='min-h-screen flex flex-col md:flex-row'>
       {/* {background} */}
@@ -22,8 +24,8 @@ const Login = () => {
                <p>Used by 12k Developer</p>
              </div>
            </div>
-            <h1 className='text-3xl md:text-6xl font-bold bg-gradient-to-r from-indigo-950 to-indigo-900 bg-clip-text text-transparent'>More than Just friends truly connect</h1>
-            <p className='text-xl md:text-3xl text-indigo-900 max-w-72 md:max-w-md'>connect with global community on Bếp Việt</p>
+            <h1 className='text-3xl md:text-6xl font-bold bg-gradient-to-r from-indigo-950 to-indigo-900 bg-clip-text text-transparent'>Kết nối cộng đồng người mê nấu ăn</h1>
+            <p className='text-xl md:text-3xl text-indigo-900 max-w-72 md:max-w-md'>Kết nối mọi người với Bếp Việt</p>
          </div>
           <span className='md:h-10'></span>
       </div>
